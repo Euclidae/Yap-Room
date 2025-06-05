@@ -11,4 +11,6 @@ sock.listen(1)
 conn, address = sock.accept()
 
 message = "Hey, there is something important for you."
+conn.send(message,encode())
 
+conn.close()
